@@ -1,0 +1,51 @@
+import java.util.*;
+public class Rectangle extends Shape
+{
+	double width,length;
+	Rectangle()
+	{
+		length=width=1.0;
+	}
+	Rectangle(double l,double w)
+	{
+		length=l;
+		width=w;
+	}
+	Rectangle(double l,double w,String c,Boolean f)
+	{
+		length=l;
+		width=w;
+		color=c;
+		filled=f;
+	}
+	void setLength(double l)
+	{
+		
+		length=l;
+	}
+	double getLength()
+	{
+		return length;
+	}
+	void setWidth(double w)
+	{
+		
+		width=w;
+	}
+	double getWidth()
+	{
+		return width;
+	}
+	double getArea()
+	{
+		return length*width;
+	}
+	double getPerimeter()
+	{
+		return ((length*2)+(width*2));
+	}
+	public String toString()
+	{
+		return "A Rectangle with width = "+ getWidth()+" and length = "+ getLength()+", which is a subclass of "+super.toString();
+	}
+}
