@@ -1,0 +1,51 @@
+import java.util.*;
+public class Square extends Rectangle 
+{
+	Square()
+	{
+		double side=1.0;
+	}
+	Square(double side)
+	{
+		length=side;
+		width=side;
+	}
+	Square(double side,String c,Boolean f)
+	{
+		length=side;
+		width=side;
+		color=c;
+		filled=f;
+	}
+	double getSide()
+	{
+		return super.getLength();
+	}
+	void setSide(double side)
+	{
+		super.setLength(side);
+	}
+	void setLength(double side ) 
+	{
+		
+		length=side;
+	}
+	void setWidth(double side ) 
+	{
+		
+		width=side;
+	}
+	double getArea()
+	{
+		return length*width;
+	}
+	double getPerimeter()
+	{
+		return ((length*2)+(width*2));
+	}
+	public String toString()
+	{
+		return "A Square with side = "+ getSide()+ " , which is a subclass of "+super.toString();
+	}
+}
+
