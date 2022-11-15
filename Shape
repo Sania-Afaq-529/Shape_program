@@ -1,0 +1,43 @@
+import java.util.*;
+public class Shape 
+{
+	String color;
+	Boolean filled;
+	Shape()
+	{
+		color="green";
+		filled=true;
+	}
+	Shape(String c,Boolean f)
+	{
+		color=c;
+		filled=f;
+	}
+	void setColor(String c)
+	{
+		color=c;
+	}
+	String getColor()
+	{
+		return color;
+	}
+	void setFilled(Boolean f)
+	{
+		
+		filled=f;
+		
+	}
+	Boolean isFilled()
+	{
+		return true;
+	}
+	public String toString()
+	{
+		if(isFilled()) 
+		{
+			return "a Shape with "+color +" color and filled";
+		}
+		else return "a Shape with "+color +"color and not filled";
+		
+	}
+}
